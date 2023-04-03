@@ -31,6 +31,8 @@ app.include_router(login.router, prefix="", tags=["login"])
 app.include_router(create.router, prefix="", tags=["create"])
 app.include_router(space.router, prefix="", tags=["space"])
 app.include_router(asset.router, prefix="", tags=["asset"])
+app.include_router(asset.router, prefix="", tags=["asset"])
+
 
 @app.post("/token", response_model=Token)
 async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
