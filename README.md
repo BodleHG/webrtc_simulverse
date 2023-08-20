@@ -114,3 +114,6 @@
 
 ## `core/static`
  - Contains css, images, and javascripts files.
+
+
+hello
